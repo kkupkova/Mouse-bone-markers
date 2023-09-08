@@ -1,5 +1,6 @@
 rm(list = ls())
-
+# script extracts bone-relevant features from multiple sources
+# involved some manual curation
 
 library(tidyverse)
 library(qusage)
