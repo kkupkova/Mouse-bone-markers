@@ -3,6 +3,8 @@
 /PanglaoDB
 /TISSUES
 
+.DS_STORE
+
 # History files
 .Rhistory
 .Rapp.history
@@ -52,3 +54,5 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+*.Rproj
