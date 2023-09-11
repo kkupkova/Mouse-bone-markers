@@ -21,4 +21,11 @@ Creating a databse of bone biomarkers for mouse by combining multiple sources.
 > Download [mouse Experiment channel](https://download.jensenlab.org/mouse_tissue_experiments_full.tsv) and save as `/TISSUES/mouse_tissue_knowledge_full.tsv`
 
 ### 2. Create database
-Using [/R_scripts/process_databases.R](https://github.com/kkupkova/Mouse-bone-markers/blob/main/R_scripts/process_databases.R) script  extract bone-relevant features from all downloaded datasets and create bone-relavant marker database (or just get the processed file [here](BONE_DATABASE.tsv)).
+Using [/R_scripts/process_databases.R](https://github.com/kkupkova/Mouse-bone-markers/blob/main/R_scripts/process_databases.R) script  extract bone-relevant features from all downloaded datasets and create bone-relavant marker database (or just get the processed TSV file [here](BONE_DATABASE.tsv)).
+
+R script [/R_scripts/make_database_as_lists.R](https://github.com/kkupkova/Mouse-bone-markers/blob/main/R_scripts/make_database_as_lists.R) takes the full database and reshapes it into lists (used in enrichment analysis of ranked lists by for example [fgsea](https://bioconductor.org/packages/release/bioc/html/fgsea.html)). The final lists are following:
+
+- list with markers for individual cell types: [/BONE_DATABASE_lists/bone_cellType.Rdata](https://github.com/kkupkova/Mouse-bone-markers/blob/main/BONE_DATABASE_lists/bone_cellType.Rdata)
+- list with markers for individual cell types separated by source database: [/BONE_DATABASE_lists/bone_cellType_and_sourceDB.Rdata](https://github.com/kkupkova/Mouse-bone-markers/blob/main/BONE_DATABASE_lists/bone_cellType_and_sourceDB.Rdata)
+- list with markers for individual tissues: [/BONE_DATABASE_lists/bone_tissue.Rdata](https://github.com/kkupkova/Mouse-bone-markers/blob/main/BONE_DATABASE_lists/bone_tissue.Rdata)
+- list with markers for individual tissues separated by source database: [/BONE_DATABASE_lists/bone_tissue_and_sourceDB.Rdata](https://github.com/kkupkova/Mouse-bone-markers/blob/main/BONE_DATABASE_lists/bone_tissue_and_sourceDB.Rdata)
