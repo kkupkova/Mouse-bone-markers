@@ -18,7 +18,7 @@ Creating a databse of bone biomarkers for mouse by combining multiple sources.
 
 #### [TISSUES](https://tissues.jensenlab.org/Search)
 > Download [mouse Knowledge channel](https://download.jensenlab.org/mouse_tissue_knowledge_full.tsv) and save as `/TISSUES/mouse_tissue_knowledge_full.tsv`
-> Download [mouse Experiment channel](https://download.jensenlab.org/mouse_tissue_experiments_full.tsv) and save as `/TISSUES/mouse_tissue_knowledge_full.tsv`
+> Download [mouse Experiment channel](https://download.jensenlab.org/mouse_tissue_experiments_full.tsv) and save as `/TISSUES/mouse_tissue_experiments_full`
 
 ### 2. Create database
 Using [/R_scripts/process_databases.R](https://github.com/kkupkova/Mouse-bone-markers/blob/main/R_scripts/process_databases.R) script  extract bone-relevant features from all downloaded datasets and create bone-relavant marker database (or just get the processed TSV file [here](BONE_DATABASE.tsv)).
